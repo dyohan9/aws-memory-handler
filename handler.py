@@ -22,8 +22,6 @@ def get_number():
     if total_instances_available < 1:
         return total_instances_alive+1
     elif total_instances_available > 1:
-        print(total_instances_available)
-        print(total_instances_available)
         return ((total_instances_alive-total_instances_available)+1)
     else:
         return None
