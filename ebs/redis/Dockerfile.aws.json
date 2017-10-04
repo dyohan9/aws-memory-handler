@@ -1,0 +1,23 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "bothub-redis-dev",
+      "image": "bitnami/redis",
+      "essential": true,
+      "memoryReservation": 512,
+      "portMappings": [
+        {
+          "hostPort": 6379,
+          "containerPort": 6379
+        }
+      ],
+      "environment": [
+        {
+          "name": "ALLOW_EMPTY_PASSWORD",
+          "value": "yes"
+        }
+      ]
+    }
+  ]
+}
